@@ -1,0 +1,64 @@
+<?php
+    echo"<center><font size=12>Sejam Bem Vindos!!</center></font>";
+        $n1=10;
+            $n2=20;
+                $nome="Thereza Gondim";
+                    echo"<font size=8>O valor de n1 é: $n1</font><br>";
+            echo"<font size=7>O valor de n2 é: $n2</font><br>";
+            echo"<font size=5>O nome é: $nome</font><br>";
+            
+            //Soma
+            
+            $soma = $n1 + $n2;
+            
+            echo"<font size= 7> A soma é: $soma</font><br>";
+            
+            //Subt
+            
+            $sub = $n1 - $n2;
+            
+            echo"<font size=7>A subt é: $sub</font><br>";
+            
+            //Mult
+            
+            $mult = $n1 * $n2;
+            
+            echo"<font size=7>A mult é: $mult</font><br>";
+                    
+            //Div
+                    
+            $div = $n1 / $n2;
+            
+            echo"<font size=7>A divisão é: $div</font><br>";
+            
+            //Resto
+            
+            $res = $n1 % $n2;
+            
+            echo"<font size=7>O resto é: $res</font><br>";
+                    
+            //Outra maneira de fazer as operações, usando concatenação
+                    
+            echo"<font size=6><br>A soma de n1 e n2 é:".($n1+$n2);
+            echo"<font size=6><br>A subt de n1 e n2 é: ".($n1-$n2);
+            echo"<font size=6><br>A mult de n1 e n2 é: ".($n1*$n2);
+            echo"<font size=6><br>A div de n1 e n2 é: ".($n1/$n2);
+            echo"<font size=6><br>O resto de n1 e n2 é: ".($n1%$n2);
+            
+            //Entrando com valores pela URL - metodo GET
+            
+            $a= $_GET["x"];
+            $b= $_GET["y"];
+            $c= $_GET["z"];
+            
+            echo"<br>O valor de a é: $a";
+            echo"<br>O valor de b é: $b";
+            echo"<br>O valor de c é: $c";
+            
+            $soma1 = $a + $b;
+            $subt1 = $a - $b;
+            
+            echo"<br>O resultado da soma é: $soma1";
+            echo"<br>O resultado da sub é: $subt1";
+            
+?>
