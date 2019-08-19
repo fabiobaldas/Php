@@ -1,0 +1,17 @@
+<?php
+    $a = $_GET["x"];
+    $b = $_GET["y"];
+    
+    echo"O valor absoluto de a é: ".abs($a);
+    
+    echo"<br>O valor absoluto de b é: ".abs($b);
+    
+    // Raiz quadrada - sqrt();
+    
+    echo"<br>A raiz quadrada de b é: ".sqrt($b);
+    
+    //number_format() - Formatação de casas decimais
+    
+    echo"<br>O valor de b é: ".number_format($b,2);
+    
+?>
