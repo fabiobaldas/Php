@@ -14,4 +14,84 @@
     
     echo"<br>O valor de b é: ".number_format($b,2);
     
+    //pow() - Potência
+    
+    echo"<br>O valor de b é: ".pow($b,3);
+    
+    //round() - Matematicamente
+    
+    echo"<br>O valor arrodando de $a é ".round($a);
+    
+    // ceil() - Arredonda obrigatoriamente para cima
+    echo"<br>O valor arredondado para cima $a é ".ceil($a);
+    
+    // floor() - Arredonda obrigatoriamente para baixo
+    echo"<br>O valor arrendondado para baixo $a é ".floor($a);
+    
+    //intval() - Pega o valor somente do inteiro na variavel
+    echo"<br>O valor inteiro de $a é:".intval($a);
+    
+    //Operadores de incremento - incremento e pos-incremento
+    
+    $c = 20;
+    echo"<br>O valor incrementado de $c é: ".++$c; /*pre-incremento, pega o valor real e soma mais 1 imediamente*/
+    
+    $c = 20;
+    echo"<br>O valor incrementado de $c é ".$c++; //pos-incremento, pega o valor real e depois SOMA mais 1 
+    echo"<br>O resultado do pos incremento é: ".$c; // resultado do pos-incremento
+    
+    $c = 20;
+    echo"<br>O valor incrementado de $c é: ".--$c; /*pre-incremento, pega o valor real e DIMINUI mais 1 imediamente*/
+    
+    $c = 20;
+    echo"<br>O valor incrementado de $c é ".$c--; //pos-incremento, pega o valor real e depois DIMINIU mais 1 
+    echo"<br>O resultado do pos incremento é: ".$c; // resultado do pos-incremento
+    
+    // Exemplo de incremento e decremento
+    
+    $num1 = 2;
+    $num2 = 4;
+    $num3 = 8;
+    
+    $resposta1 = ++$num2 - $num1;
+    $resposta2 = $num3-- + $num1;
+    echo"<br>Resposta1 = $resposta1 <br> Resposta2 = $resposta2 <br>";
+    
+    //Operadores de atribuição 
+    
+    $valor =20;
+    $valor +=30;
+    echo"<br>A soma dos valores é: ".$valor;
+    
+    //Operador ternario variavel=condição?verdadeiro:false
+    
+    $n1=$_GET["a"];
+    $n2=$_GET["b"];
+    $maior = $n1 > $n2?($n1+$n2):($n2-$n1);
+    echo"<br>O valor é: ".$maior;
+    
+    //Operadores Relacionais 
+    //Operador igual == (Verifica se os dados são iguais)
+    
+    $w=3;
+    $n="3";
+    $result=($w===$n)?"sim":"não";
+    echo"<br>O valor é igual?".$result;
+    
+    //Operador de identidade diferente !==  
+    
+    $w=3;
+    $n="3";
+    $result=($w!==$n)?"sim":"não";
+    echo"<br>A identidade é diferente?".$result;
+    
+    //Operadores lógicos and $$, or ||, not !
+    
+    $ano= $_GET["e"];
+    $idade=2019 - $ano;
+    echo"<br>Quem nasceu no ano $ano têm idade igual a: $idade";
+    $f=($idade>=18)||($idade<65)?"Voto Obrigatorio":"Não precisa votar!";
+    echo"<br>O seu voto é: ".$f;
+    
+    
 ?>
