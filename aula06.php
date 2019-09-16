@@ -120,15 +120,15 @@ echo"<br>Meu nome ao contrario é ".strrev($nome89);
 
 echo"<br>"; 
 
-$teste = "Php até que é legalzinho";
-$pos = strpos($teste, "Php");
+$teste = "PHP até que é legalzinho";
+$pos = strpos($teste, "PHP");
 echo"<br>A frase é: $teste";
 echo"<br>Se encontra na posição $pos";
 
 /*
- 16ª Função - substr_count (
+ 16ª Função - stripos (Tras a busca independente da escrita estar igual a frase)
  */
 
-$pos = substr_count($teste,"php");
+$pos = stripos($teste,"php");
 echo"<br>A string foi encontrada na posição $pos";
 ?>
